@@ -17,3 +17,29 @@ function otevritDubany(){
         document.getElementById("dubanyFotky").style.display = "flex";
     }
 }
+
+var podlahy = false;
+function otevritPodlahy(){
+    podlahy = !podlahy;
+    if(podlahy == false){
+        document.getElementById("podlahyFotky").style.display = "none";
+    }
+    if(podlahy == true){
+        document.getElementById("podlahyFotky").style.display = "flex";
+    }
+}
+
+function copyNumber(){
+    var copyText = document.getElementById("phoneNumber");
+  
+
+    navigator.clipboard.writeText(copyText.textContent);
+
+    alert("kopirovano: " + copyText.textContent);
+}
+function copyEmail(){
+    var copyText = document.getElementById("email");
+    navigator.clipboard.writeText(copyText.textContent);
+
+    alert("kopirovano: " + copyText.textContent);
+}

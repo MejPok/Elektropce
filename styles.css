@@ -186,7 +186,7 @@ li {
 }
 .galerieHolder {
     margin-top: 25px;
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
@@ -220,6 +220,7 @@ li {
     background-color: #f7c073;
     border: #142c53 1px solid;
     margin: 0 auto;
+    margin-top: 25px;
     display: block;
     width: fit-content;
     border-radius: 8px;
@@ -227,5 +228,37 @@ li {
 }
 .otevritFotky:hover{
     background-color:#ecad54;
+    transform: scale(1.1);
+}
+.kontakty {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: flex;
+    gap: 100px;
+    
+}
+.kontakty img {
+    width: 300px;
+}
+.kontakty ul {
+    list-style: none;
+}
+.kontakty ul li {
+    font-size: large;
+    font-weight: bold;
+}
+.copy {
+    border: #142c53 1px solid;
+    padding: 4px;
+    width: fit-content;
+    background-color: aliceblue;
+    border-radius: 10px;
+    transition: 100ms;
+    cursor: grab;
+}
+.copy:hover{
+    background-color: #f7e4ca;
     transform: scale(1.1);
 }
